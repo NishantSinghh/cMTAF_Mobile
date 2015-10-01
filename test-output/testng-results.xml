@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="156735" started-at="2015-09-30T11:52:47Z" finished-at="2015-09-30T11:55:24Z">
+    <groups>
+    </groups>
+    <test name="Test01" duration-ms="156735" started-at="2015-09-30T11:52:47Z" finished-at="2015-09-30T11:55:24Z">
+      <class name="com.capgemini.executor.Executioner">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.capgemini.executor.Executioner@12fad11]" name="setup" duration-ms="156723" started-at="2015-09-30T17:22:47Z" finished-at="2015-09-30T17:25:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://127.0.0.1:4723/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4724]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tear(java.lang.String)[pri:0, instance:com.capgemini.executor.Executioner@12fad11]" name="tear" is-config="true" duration-ms="4001" started-at="2015-09-30T17:25:24Z" finished-at="2015-09-30T17:25:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- com.capgemini.executor.Executioner -->
+    </test> <!-- Test01 -->
+  </suite> <!-- Suite -->
+</testng-results>
