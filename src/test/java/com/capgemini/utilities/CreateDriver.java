@@ -361,7 +361,7 @@ public class CreateDriver {
 			DefaultExecutor executor = new DefaultExecutor();
 			executor.setExitValue(1);
 			executor.execute(command, resultHandler);
-			Thread.sleep(4000);
+			Thread.sleep(10000);
 			System.out.println("StopAppiumExecuted");
 		}catch(Exception e){
 			System.out.println(e);
@@ -382,7 +382,7 @@ public class CreateDriver {
 	        DefaultExecutor executor = new DefaultExecutor();
 	        executor.setExitValue(1);
 	        executor.execute(command, resultHandler);
-	        Thread.sleep(4000);
+	        Thread.sleep(10000);
 	        System.out.println("StopAppiumExecuted");
 	    }catch(Exception e){
 	        System.out.println(e);

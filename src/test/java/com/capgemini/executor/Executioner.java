@@ -80,7 +80,7 @@ public class Executioner {
 				if(browser.isEmpty()){
 					browser = BrName;
 				}
-		}
+		
 		
 			
 			try {
@@ -117,7 +117,7 @@ public class Executioner {
 	
 		}
 	}
-	
+	}
 	@AfterSuite
 	@Parameters("browser")
 	public void tear(String browser){
