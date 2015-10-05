@@ -1,8 +1,12 @@
 package com.capgemini.scripts;
 
+import java.util.List;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -96,6 +100,7 @@ public class ERIBankLogin {
 	
 	//All the test function should have intCounter as argument
 	public void executeTest(int intCounter){
+		int intFlag=0;
 		WebDriverWait driverWait = new WebDriverWait(driver,30);
 		driverWait.until(ExpectedConditions.elementToBeClickable(bank.txtUserName));
 		String strUserName = read.getValue(strTestName, "Username", intCounter);
@@ -107,6 +112,19 @@ public class ERIBankLogin {
 		reporter.log(LogStatus.INFO, reporter.addScreenCapture(Reporter.CaptureScreen(driver)));
 		bank.btnLogSignin.click();
 		System.out.println("button Clicked");
+		try{
+			driverWait.until(ExpectedConditions.elementToBeClickable(By.id("com.experitest.ExperiBank:id/makePaymentButton")));
+		}catch(Exception e){
+			intFlag=1;
+		}
+		if(intFlag==1){
+			reporter.log(LogStatus.FAIL, "Make payment screen not displayed. Login Failed!!");
+			reporter.log(LogStatus.INFO, reporter.addScreenCapture(Reporter.CaptureScreen(driver)));
+		}
+		else{
+			reporter.log(LogStatus.PASS, "Make payment screen displayed. Login Successfull!!");
+			reporter.log(LogStatus.INFO, reporter.addScreenCapture(Reporter.CaptureScreen(driver)));
+		}
 		
 	}
 	//next function

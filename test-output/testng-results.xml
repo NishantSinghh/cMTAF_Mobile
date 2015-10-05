@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="156735" started-at="2015-09-30T11:52:47Z" finished-at="2015-09-30T11:55:24Z">
+  <suite name="Suite" duration-ms="444735" started-at="2015-10-05T10:35:08Z" finished-at="2015-10-05T10:42:32Z">
     <groups>
     </groups>
-    <test name="Test01" duration-ms="156735" started-at="2015-09-30T11:52:47Z" finished-at="2015-09-30T11:55:24Z">
+    <test name="Test02" duration-ms="366934" started-at="2015-10-05T10:35:08Z" finished-at="2015-10-05T10:41:15Z">
       <class name="com.capgemini.executor.Executioner">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.capgemini.executor.Executioner@12fad11]" name="setup" duration-ms="156723" started-at="2015-09-30T17:22:47Z" finished-at="2015-09-30T17:25:24Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.capgemini.executor.Executioner@bbc1e0]" name="setup" duration-ms="366916" started-at="2015-10-05T16:05:08Z" finished-at="2015-10-05T16:11:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://127.0.0.1:4733/wd/hub]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4734]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[emulator-5556]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tear(java.lang.String)[pri:0, instance:com.capgemini.executor.Executioner@bbc1e0]" name="tear" is-config="true" duration-ms="10001" started-at="2015-10-05T16:12:32Z" finished-at="2015-10-05T16:12:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- com.capgemini.executor.Executioner -->
+    </test> <!-- Test02 -->
+    <test name="Test01" duration-ms="444735" started-at="2015-10-05T10:35:08Z" finished-at="2015-10-05T10:42:32Z">
+      <class name="com.capgemini.executor.Executioner">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.capgemini.executor.Executioner@12fad11]" name="setup" duration-ms="444723" started-at="2015-10-05T16:05:08Z" finished-at="2015-10-05T16:12:32Z">
           <params>
             <param index="0">
               <value>
@@ -33,17 +74,6 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="tear(java.lang.String)[pri:0, instance:com.capgemini.executor.Executioner@12fad11]" name="tear" is-config="true" duration-ms="4001" started-at="2015-09-30T17:25:24Z" finished-at="2015-09-30T17:25:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Android]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear -->
       </class> <!-- com.capgemini.executor.Executioner -->
     </test> <!-- Test01 -->
   </suite> <!-- Suite -->

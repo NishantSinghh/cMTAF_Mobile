@@ -129,6 +129,7 @@ public class ReadFile {
 				String strHeader= rowHeader.getCell(i).getStringCellValue();
 				if(strHeader.equalsIgnoreCase(ColName)){
 					//System.out.println(i);
+					rowValue.getCell(i,Row.CREATE_NULL_AS_BLANK).setCellType(Cell.CELL_TYPE_STRING);
 					strValue = rowValue.getCell(i,Row.CREATE_NULL_AS_BLANK).getStringCellValue();
 					//System.out.println(strValue);
 					break;

@@ -48,12 +48,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\Automation_Tools\MavenWorkspace\cMTAF_New_29-9\testng.xml</span>
+                    <span>D:\Nishant\cMTAF_New_29-9\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +99,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.capgemini.executor.Executioner" hash-for-method="setup(http://127.0.0.1:4733/wd/hub, 4734, Android, emulator-5556)">setup(http://127.0.0.1:4733/wd/hub, 4734, Android, emulator-5556)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.capgemini.executor.Executioner" hash-for-method="setup(http://127.0.0.1:4723/wd/hub, 4724, Android, emulator-5554)">setup(http://127.0.0.1:4723/wd/hub, 4724, Android, emulator-5554)</a> <!-- method navigator-link -->
@@ -124,6 +129,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="setup(http://127.0.0.1:4733/wd/hub, 4734, Android, emulator-5556)">
+                  </a> <!-- setup(http://127.0.0.1:4733/wd/hub, 4734, Android, emulator-5556) -->
+                  <span class="method-name">setup</span>
+                  <span class="parameters">(http://127.0.0.1:4733/wd/hub, 4734, Android, emulator-5556)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="setup(http://127.0.0.1:4723/wd/hub, 4724, Android, emulator-5554)">
                   </a> <!-- setup(http://127.0.0.1:4723/wd/hub, 4724, Android, emulator-5554) -->
                   <span class="method-name">setup</span>
@@ -135,7 +148,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Automation_Tools\MavenWorkspace\cMTAF_New_29-9\testng.xml</span>
+            <span class="header-content">D:\Nishant\cMTAF_New_29-9\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -151,6 +164,15 @@
       &lt;class name=&quot;com.capgemini.executor.Executioner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test01 --&gt;
+  &lt;test name=&quot;Test02&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Android&quot;/&gt;
+    &lt;parameter name=&quot;host&quot; value=&quot;http://127.0.0.1:4733/wd/hub&quot;/&gt;
+    &lt;parameter name=&quot;bootstrap&quot; value=&quot;4734&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;emulator-5556&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capgemini.executor.Executioner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test02 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,6 +185,9 @@
             <ul>
               <li>
                 <span class="test-name">Test01 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test02 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,16 +213,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'setup')
 data.setCell(0, 2, 'com.capgemini.executor.Executioner')
-data.setCell(0, 3, 156723);
+data.setCell(0, 3, 444723);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'setup')
+data.setCell(1, 2, 'com.capgemini.executor.Executioner')
+data.setCell(1, 3, 366916);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 13 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -228,9 +257,13 @@ return data;
                 <span class="method-name">setup(http://127.0.0.1:4723/wd/hub, 4724, Android, emulator-5554)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setup(http://127.0.0.1:4733/wd/hub, 4734, Android, emulator-5556)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tear(Android)</span>
-                <span class="method-start">156805 ms</span>
+                <span class="method-start">444731 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
